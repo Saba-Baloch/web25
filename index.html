@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .contanir {
+        min-height: 500px;
+        /* min-width: 100px; */
+        display: flex;
+        border-radius: 10%;
+        align-items: center;
+        justify-items: center;
+        border: 2px solid white;
+        background-color: black;
+        position: relative;
+        /* flex-wrap: wrap; */
+        align-content: center;
+        /* justify-content: end; */
+        padding: 10px 10px;
+        position: relative;
+      }
+      .box1 {
+        color: white;
+        /* position: absolute;
+        bottom: 20px;
+        left: 400px; */
+        font-size: 50px;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+      }
+      @media (min-width: 200px) and (max-width: 400px) {
+        .contanir {
+          font-size: 20px;
+        }
+      }
+      @media (min-width: 400px) and (max-width: 700px) {
+        .contanir {
+          font-size: 34px;
+        }
+      }
+      @media (min-width: 700px) and (max-width: 1200px) {
+        .contanir {
+          font-size: 70px;
+        }
+      }
+      @media (min-width: 200px) and (max-width: 400px) {
+        .box1 {
+          font-size: 20px;
+        }
+      }
+      @media (min-width: 400px) and (max-width: 700px) {
+        .box1 {
+          font-size: 34px;
+        }
+      }
+      @media (min-width: 700px) and (max-width: 1200px) {
+        .box1 {
+          font-size: 70px;
+        }
+      }
+      .contanir1 {
+        min-height: 900px;
+        display: grid;
+        width: 900px;
+        /* height: 500px; */
+        background-color: rgba(15, 228, 232, 0.482);
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        margin: 40px 40px;
+        gap: 10px;
+        grid-template-rows: 100px 100px repeat(3, 1fr);
+      }
+      @media (min-width: 200px) and (max-width: 400px) {
+        .contanir1 {
+          font-size: 20px;
+        }
+      }
+      @media (min-width: 400px) and (max-width: 700px) {
+        .contanir1 {
+          font-size: 34px;
+        }
+      }
+      @media (min-width: 700px) and (max-width: 1200px) {
+        .contanir1 {
+          font-size: 70px;
+        }
+      }
+      .box {
+        /* background-color: rgb(255, 98, 0); */
+        min-width: 20px;
+        min-height: 50px;
+        gap: 10px;
+      }
+
+      .box :nth-child(1) {
+        border-radius: 50%;
+        /* grid-column: 2/6; */
+        /* position: absolute;
+        top: 20px;
+        right: 12px; */
+
+      }
+      .box :nth-child(2) {
+        border-radius: 50%;
+        grid-row: 2/-3;
+      }
+      /* img{
+    font-spx;
+} */
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contanir">
+      <div class="box1">DIGITAL.MP3.PLAYER-Z</div>
+    </div>
+    <div class="contanir1">
+      <div class="box"><img src="mute opt.png" alt="" width="10px" /></div>
+      <div class="box">
+        <img src="privious opt.png" alt="" width="100px" />
+      </div>
+      <div class="box">
+        <div class="box">
+          <img src="center.jpeg" alt="" width="350px" />
+        </div>
+        <img src="play option.png" alt="" width="150px" />
+      </div>
+      <div class="box"><img src="next option.png" alt="" width="150px" /></div>
+    </div>
+  </body>
+</html>
